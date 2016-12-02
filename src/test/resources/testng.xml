@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Main page" verbose="1" >
+
+    <test name="Main page find form tests" >
+        <classes>
+            <class name="com.booking.lux.MainPageTest"/>
+            <parameter name="destination" value="New York"/>
+        </classes>
+    </test>
+</suite>
