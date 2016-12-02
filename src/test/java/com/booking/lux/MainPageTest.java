@@ -27,7 +27,7 @@ public class MainPageTest {
 
     @Test(description = "Test search functionality")
     @Parameters("destination")
-    public void searchTest(/*@Optional(value = "New York")*/ String destination) {
+    public void searchTest(String destination) {
         Reporter.log("Step 1. Open booking.com website.");
         MainPage mainPage = open("http://www.booking.com", MainPage.class);
         mainPage.getTopBanner().selectLocale();
